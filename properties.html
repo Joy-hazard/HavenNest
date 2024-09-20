@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="HavenNext-icon.png" type="image/x-icon">
+
+
+  <title>HavenNest - Real Estate</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+  <style>
+    /* Styling for form fields */
+    .filter-form .form-group select,
+    .filter-form .form-group input {
+      border-radius: 15px;
+      border: 1px solid #E30B41;
+      padding: 10px;
+      width: 300px;
+    }
+
+    .filter-form select::placeholder,
+    .filter-form input::placeholder {
+      color: #999;
+      font-style: italic;
+    }
+
+    .filter-form select,
+    .filter-form input {
+      font-size: 18px;
+    }
+
+    /* Search button styling */
+    .filter-form button {
+      border-radius: 8px;
+      padding: 10px 20px;
+      background-color: #E30B41;
+      border: none;
+    }
+
+    .filter-form button:hover {
+      background-color: #550024;
+    }
+
+    /* Media query for mobile responsiveness */
+    @media (max-width: 768px) {
+      .filter-form .form-group {
+        width: 100%;
+      }
+
+      .filter-form .form-group select,
+      .filter-form .form-group input {
+        width: 100%;
+      }
+
+      .filter-form button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8">
+          <ul class="info">
+            <li><i class="fa fa-envelope"></i> info@havennest.com.bd</li>
+            <li><i class="fa fa-map"></i> 123/B, Fakirapool, Dhaka</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/joy.pal.hazard"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/joy__hazard/"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Joy-hazard" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/joy-pal-hazard/"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://joypal-hazard-2418.web.app/"><i class="fa-solid fa-user-tie"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <h1>HavenNest</h1>
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="properties.html" class="active">Properties</a></li>
+              <li><a href="property-details.html">Property Details</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="page-heading header-text">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="breadcrumb"><a href="#">Home</a> / Properties</span>
+          <h3>Properties</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Location Search Bar start-->
+
+  <div class="container mt-4">
+    <form class="filter-form d-flex flex-wrap justify-content-center">
+      <!-- Location Field -->
+      <div class="form-group me-2 mb-2">
+        <select class="form-control" id="location" aria-label="Location">
+          <option selected>Choose Location</option>
+          <option value="city1">Dhaka</option>
+          <option value="city2">Chattogram</option>
+          <option value="city3">Khula</option>
+          <option value="city4">Rajshahi</option>
+          <option value="city4">Sylhet</option>
+          <option value="city4">Mymensingh</option>
+          <option value="city4">Rangpur</option>
+          <option value="city4">Barisal</option>
+          <option value="city4">Cumilla</option>
+          <option value="city4">Gazipur</option>
+          <option value="city4">Narayanganj</option>
+
+        </select>
+      </div>
+
+      <!-- Property Category Field -->
+      <div class="form-group me-2 mb-2">
+        <select class="form-control" id="propertyCategory" aria-label="Property Category">
+          <option selected>Property Category</option>
+          <option value="apartment">Apartment</option>
+          <option value="penthouse">Penthouse</option>
+          <option value="villa">Villa</option>
+          <option value="studio">Studio</option>
+          <option value="townhouse">Townhouse</option>
+          <option value="bungalow">Bungalow</option>
+        </select>
+      </div>
+
+      <!-- Search by Keyword Field -->
+      <div class="form-group me-2 mb-2">
+        <input type="text" class="form-control" id="keyword" placeholder="Search by keyword">
+      </div>
+
+      <!-- Search Button -->
+      <button type="submit" class="btn btn-primary mb-2">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+  </div>
+  <!--Location Search Bar end -->
+
+
+  <div class="section properties">
+    <div class="container">
+      <ul class="properties-filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".adv">Apartment</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".str">Villa House</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".rac">Penthouse</a>
+        </li>
+      </ul>
+      <div class="row properties-box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-01.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>Tk 2264000</h6>
+            <h4><a href="property-details.html">18 Old Street Miami, OR 97219</a></h4>
+            <ul>
+              <li>Bedrooms: <span>8</span></li>
+              <li>Bathrooms: <span>8</span></li>
+              <li>Area: <span>545m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>6 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-02.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>1180000</h6>
+            <h4><a href="property-details.html">54 New Street Florida, OR 27001</a></h4>
+            <ul>
+              <li>Bedrooms: <span>6</span></li>
+              <li>Bathrooms: <span>5</span></li>
+              <li>Area: <span>450m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>8 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 adv rac">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-03.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>1460000</h6>
+            <h4><a href="property-details.html">26 Mid Street Portland, OR 38540</a></h4>
+            <ul>
+              <li>Bedrooms: <span>5</span></li>
+              <li>Bathrooms: <span>4</span></li>
+              <li>Area: <span>225m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>10 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 str">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-04.jpg" alt=""></a>
+            <span class="category">Apartment</span>
+            <h6>Tk 584500</h6>
+            <h4><a href="property-details.html">12 Hope Street Portland, OR 12650</a></h4>
+            <ul>
+              <li>Bedrooms: <span>4</span></li>
+              <li>Bathrooms: <span>3</span></li>
+              <li>Area: <span>125m2</span></li>
+              <li>Floor: <span>25th</span></li>
+              <li>Parking: <span>2 cars</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-05.jpg" alt=""></a>
+            <span class="category">Penthouse</span>
+            <h6>Tk 925600</h6>
+            <h4><a href="property-details.html">34 Hope Street Portland, OR 42680</a></h4>
+            <ul>
+              <li>Bedrooms: <span>4</span></li>
+              <li>Bathrooms: <span>4</span></li>
+              <li>Area: <span>180m2</span></li>
+              <li>Floor: <span>38th</span></li>
+              <li>Parking: <span>2 cars</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-06.jpg" alt=""></a>
+            <span class="category">Modern Condo</span>
+            <h6>Tk 450000</h6>
+            <h4><a href="property-details.html">22 Hope Street Portland, OR 16540</a></h4>
+            <ul>
+              <li>Bedrooms: <span>3</span></li>
+              <li>Bathrooms: <span>2</span></li>
+              <li>Area: <span>165m2</span></li>
+              <li>Floor: <span>26th</span></li>
+              <li>Parking: <span>3 cars</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac str">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-03.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>Tk 980000</h6>
+            <h4><a href="property-details.html">14 Mid Street Miami, OR 36450</a></h4>
+            <ul>
+              <li>Bedrooms: <span>8</span></li>
+              <li>Bathrooms: <span>8</span></li>
+              <li>Area: <span>550m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>12 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-02.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>Tk 1520000</h6>
+            <h4><a href="property-details.html">26 Old Street Miami, OR 12870</a></h4>
+            <ul>
+              <li>Bedrooms: <span>12</span></li>
+              <li>Bathrooms: <span>15</span></li>
+              <li>Area: <span>380m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>14 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 properties-items col-md-6 rac adv">
+          <div class="item">
+            <a href="property-details.html"><img src="assets/images/property-01.jpg" alt=""></a>
+            <span class="category">Luxury Villa</span>
+            <h6>Tk 3145000</h6>
+            <h4><a href="property-details.html">34 New Street Miami, OR 24650</a></h4>
+            <ul>
+              <li>Bedrooms: <span>10</span></li>
+              <li>Bathrooms: <span>12</span></li>
+              <li>Area: <span>860m2</span></li>
+              <li>Floor: <span>3</span></li>
+              <li>Parking: <span>10 spots</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="property-details.html">Schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a class="is_active" href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">>></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Notification Button -->
+  <div class="notification-btn" id="notification-btn">
+    <i class="fas fa-bell fa-2x text-danger"></i>
+    <div class="notification-badge" id="notification-count">2</div>
+  </div>
+
+  <!-- Offcanvas (Notification Panel) -->
+  <div class="offcanvas offcanvas-start offcanvas-notifications" id="offcanvas-notifications">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Notifications</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="notification-container">
+        <!-- Toast (Notification 1) -->
+        <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-body">
+            Vaccine registration is open!
+          </div>
+        </div>
+        <!-- Toast (Notification 2) -->
+        <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-body">
+            Here you will find all types of vaccines.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Chatbot Button -->
+  <button id="chatbotButton" class="chatbot-button">
+    <i class="fa-solid fa-message"></i>
+  </button>
+
+  <!-- Chatbot Offcanvas -->
+  <div id="chatbotCanvas" class="chatbot-canvas">
+    <div class="chatbot-header">
+      <span>Chatbot</span>
+      <button id="closeChatbot" class="close-btn">&times;</button>
+    </div>
+    <div id="chatWindow" class="chat-window"></div>
+    <div class="chatbot-footer">
+      <input type="text" id="userMessage" placeholder="Type your message..." />
+      <button id="sendMessage" class="send-btn">Send</button>
+    </div>
+  </div>
+
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2024 HavenNest Agency Co., Ltd. All rights reserved.
+
+          Design & Developed by Joy Pal</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/chatbot.js"></script>
+  <script src="assets/js/notification.js"></script>
+  <script src="assets/js/scrollTop.js"></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+
+</body>
+
+</html>

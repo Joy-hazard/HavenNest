@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="HavenNext-icon.png" type="image/x-icon">
+
+    <title>HavenNest - Real Estate</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+
+    <style>
+        /* Center and align the content */
+        .container.section {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        /* Typography for headings */
+        h2,
+        h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        /* About Us text */
+        .about-us-text {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Reviews Section Styling */
+        .reviews-section {
+            background: linear-gradient(135deg, #e5e7e8, #c9d1d7);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Review Form Styling */
+        .review-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            margin-bottom: 50px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .review-form .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review-form textarea {
+            resize: none;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+
+        /* Star Rating System */
+        .star-rating {
+            font-size: 1.75rem;
+            color: #ccc;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .star-rating .fa {
+            transition: color 0.3s ease;
+        }
+
+        .star-rating .fa.selected,
+        .star-rating .fa:hover,
+        .star-rating .fa.hovered {
+            color: #ffdd00;
+        }
+
+        /* Gradient Button */
+        .btn-gradient {
+            background: linear-gradient(135deg, #ca2e2e, #ec520a);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1rem;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            background: linear-gradient(135deg, #E30B41, #730c26);
+        }
+
+        /* Review Cards */
+        .review-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .review-card p {
+            color: #444;
+            font-size: 1rem;
+        }
+
+        .review-card .star-rating {
+            margin-top: 10px;
+        }
+
+
+        /* Testimonials Carousel */
+        .testimonial-section {
+            margin-top: 70px;
+
+        }
+
+
+        .testimonial-wrapper {
+            display: flex;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 20px;
+
+        }
+
+        .testimonial-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
+        .testimonial-card {
+            flex: 0 0 auto;
+            width: 300px;
+            margin: 50px 50px;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: #777;
+            margin-top: 15px;
+        }
+
+        .testimonial-btn {
+            border: none;
+            background: none;
+            font-size: 2rem;
+            color: #333;
+            cursor: pointer;
+            margin: 0 20px;
+        }
+
+        /* Zoom-in effect for images */
+        .testimonial-image:hover {
+            transform: scale(1.1);
+        }
+
+        /* Zoom-out on hover for reviews and testimonials */
+        .review-card:hover,
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <div class="sub-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8">
+                    <ul class="info">
+                        <li><i class="fa fa-envelope"></i> info@havennest.com.bd</li>
+                        <li><i class="fa fa-map"></i> 123/B, Fakirapool, Dhaka</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/joy.pal.hazard"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/joy__hazard/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/Joy-hazard" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/joy-pal-hazard/"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="https://joypal-hazard-2418.web.app/"><i class="fa-solid fa-user-tie"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <h1>HavenNest</h1>
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="properties.html">Properties</a></li>
+                            <li><a href="property-details.html">Property Details</a></li>
+                            <li><a href="aboutUs.html" class="active">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- About Us Section -->
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <span class="breadcrumb"><a href="#">Home</a> / About Us</span>
+                    <h3>About Us</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="container section">
+        <h2>About HavenNest</h2>
+        <p class="about-us-text">At HavenNest, we connect you with luxurious properties that suit your lifestyle. Our
+            mission is to ensure that you find your perfect home, whether it's a villa, apartment, or penthouse. With
+            our extensive range of properties and dedicated agents, we ensure that your home search is smooth and
+            stress-free.</p>
+        <p class="about-us-text">Our vision is to create a seamless experience for homebuyers and renters, giving you
+            the comfort and ease you deserve. From finding the perfect home to managing properties, HavenNest is your
+            one-stop solution for all your real estate needs.</p>
+    </div>
+
+    <!-- Reviews & Ratings Section -->
+    <div class="container reviews-section">
+        <h3 class="section-title">What Our Clients Say</h3>
+
+        <!-- Review Form -->
+        <form class="review-form">
+            <div class="form-group">
+                <label for="review-text">Your Review</label>
+                <textarea class="form-control" id="review-text" rows="3" placeholder="Write your review..."
+                    required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="rating">Rate Us</label>
+                <div class="star-rating" id="star-rating">
+                    <span class="fa fa-star" data-value="1"></span>
+                    <span class="fa fa-star" data-value="2"></span>
+                    <span class="fa fa-star" data-value="3"></span>
+                    <span class="fa fa-star" data-value="4"></span>
+                    <span class="fa fa-star" data-value="5"></span>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-gradient mt-4">Submit Review</button>
+        </form>
+
+        <!-- Displayed Reviews -->
+        <div class="reviews mt-5">
+            <div class="review-card">
+                <p><strong>John Doe</strong> - <span class="star-rating">⭐⭐⭐⭐⭐</span></p>
+                <p class="review-text">"The team at HavenNest made the entire process so smooth. I found the perfect
+                    home!"</p>
+            </div>
+            <div class="review-card">
+                <p><strong>Jane Smith</strong> - <span class="star-rating">⭐⭐⭐⭐⭐</span></p>
+                <p class="review-text">"Amazing service! They really understand the customer’s needs. Highly recommend."
+                </p>
+            </div>
+            <div class="review-card">
+                <p><strong>Emily Taylor</strong> - <span class="star-rating">⭐⭐⭐⭐</span></p>
+                <p class="review-text">"Super helpful agents! My experience with HavenNest was excellent."</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Testimonials Section with Left-Right Scroll -->
+    <div class="container testimonial-section">
+        <h3>Testimonials</h3>
+        <div class="d-flex align-items-center justify-content-center">
+            <button class="testimonial-btn" id="scroll-left">&#10094;</button>
+            <div class="testimonial-wrapper">
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/user1.jfif" alt="User 1" class="testimonial-image">
+                        <h5>John Doe</h5>
+                    </div>
+                    <p class="testimonial-text">"HavenNest made the entire house-hunting process seamless. I couldn't be
+                        happier with my new home!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/user2.jfif" alt="User 2" class="testimonial-image">
+                        <h5>Jane Smith</h5>
+                    </div>
+                    <p class="testimonial-text">"The team was incredibly professional and guided me through every step.
+                        Fantastic experience!"</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/user3.jfif" alt="User 3" class="testimonial-image">
+                        <h5>Mark Wilson</h5>
+                    </div>
+                    <p class="testimonial-text">"Highly satisfied with their service! They helped me find the ideal
+                        property with ease."</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/images/user1.jfif" alt="User 4" class="testimonial-image">
+                        <h5>Sarah Parker</h5>
+                    </div>
+                    <p class="testimonial-text">"Professional, reliable, and efficient. I couldn't ask for a better real
+                        estate experience!"</p>
+                </div>
+                <!-- Add more testimonials as desired -->
+            </div>
+            <button class="testimonial-btn" id="scroll-right">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Notification Button -->
+    <div class="notification-btn" id="notification-btn">
+        <i class="fas fa-bell fa-2x text-danger"></i>
+        <div class="notification-badge" id="notification-count">2</div>
+    </div>
+
+    <!-- Offcanvas (Notification Panel) -->
+    <div class="offcanvas offcanvas-start offcanvas-notifications" id="offcanvas-notifications">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Notifications</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="notification-container">
+                <!-- Toast (Notification 1) -->
+                <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        Vaccine registration is open!
+                    </div>
+                </div>
+                <!-- Toast (Notification 2) -->
+                <div class="toast mb-3" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-body">
+                        Here you will find all types of vaccines.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Chatbot Button -->
+    <button id="chatbotButton" class="chatbot-button">
+        <i class="fa-solid fa-message"></i>
+    </button>
+
+    <!-- Chatbot Offcanvas -->
+    <div id="chatbotCanvas" class="chatbot-canvas">
+        <div class="chatbot-header">
+            <span>Chatbot</span>
+            <button id="closeChatbot" class="close-btn">&times;</button>
+        </div>
+        <div id="chatWindow" class="chat-window"></div>
+        <div class="chatbot-footer">
+            <input type="text" id="userMessage" placeholder="Type your message..." />
+            <button id="sendMessage" class="send-btn">Send</button>
+        </div>
+    </div>
+
+
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="col-lg-12">
+                <p>Copyright © 2024 HavenNest Agency Co., Ltd. All rights reserved.
+
+                    Design & Developed by Joy Pal</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/chatbot.js"></script>
+    <script src="assets/js/notification.js"></script>
+    <script src="assets/js/scrollTop.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+    <script>
+        document.getElementById('scroll-left').addEventListener('click', function () {
+            document.querySelector('.testimonial-wrapper').scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+        document.getElementById('scroll-right').addEventListener('click', function () {
+            document.querySelector('.testimonial-wrapper').scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
